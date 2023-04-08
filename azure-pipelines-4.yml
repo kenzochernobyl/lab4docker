@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'c4a8e18f-bf5f-4a83-99ba-81f52abde312'
   imageRepository: 'kenzochernobyllabdocker'
   containerRegistry: 'acrkenzo.azurecr.io'
-  dockerfilePath: '**/Dockerfile'
+  dockerfilePath: '**/DockerFile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'acrkenzo56329fb4-auth'
 
