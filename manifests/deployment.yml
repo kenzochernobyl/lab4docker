@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: kenzochernobyllabdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kenzochernobyllabdocker
+  template:
+    metadata:
+      labels:
+        app: kenzochernobyllabdocker 
+    spec:
+      containers:
+        - name: kenzochernobyllabdocker 
+          image: acrkenzo.azurecr.io/kenzochernobyllabdocker
+          ports:
+          - containerPort: 80
